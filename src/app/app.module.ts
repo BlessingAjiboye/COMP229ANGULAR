@@ -14,7 +14,7 @@ import { ServicesComponent } from './pages/services/services.component';
 import { BasePageComponent } from './partials/base-page/base-page.component';
 import { BookStoreComponent } from './book-store/book-store.component';
 
-
+import {ModelModule} from './model/model.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import { BookStoreComponent } from './book-store/book-store.component';
     BasePageComponent,
     BookStoreComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ModelModule],
   providers: [],
   bootstrap: [AppComponent],
 })
