@@ -7,8 +7,8 @@
         <div *ngFor = "let book of books" class="card m-1 p-1 bg-light">
           <h4>
         {{book.name}}
-        <span class="badge badge-pill badge-primary float-right">
-          {{book.price | currency:"CAD":"symbol":'2.2.2'}}
+        <span class="badge badge-pill badge-primary float-right" style="color: blue;">
+          {{book.price | currency:"CAD":"symbol":'2.2-2'}}
           </span>
         </h4>
         <div class="card-text bg-white p-1">
